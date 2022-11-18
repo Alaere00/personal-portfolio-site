@@ -4,65 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title> Document </title>
 </head>
 <body>
-    <div class="container">
-        <nav>Navbar</nav>
-        <main>Main</main>
-        <div id="sidebar"> Sidebar</div>
-        <div id="content1"> Content1</div>
-        <div id="content2"> Content2</div>
-        <div id="content3"> Content3</div>
-        <footer>Footer</footer>
-    </div>
-    <section class="directory">
     <nav>
         <ul class="nav-list">
             <li><a href="http://127.0.0.1:5500/index.html"> Home </a></li>
-            <li><a href="http://127.0.0.1:5500/portfolio.html"> Portfolio</a></li>
             <li><a href="http://127.0.0.1:5500/about.html"> About </a></li>
+            <li><a href="http://127.0.0.1:5500/portfolio.html"> Portfolio</a></li>
         </ul>
     </nav>
-    <header> 
-        <h1> Github Repo's </h1>
-    </header>
-</section>
-    <section>
-    <header> 
+    <div id="wrapper-main">
+        <div class="header">
+            <h1> Github Repo's </h1>
+        </div>
+    <div id="wrapper-grid">
+        <div class="container">
         <h2> Viewing Party </h2>
-        <p> Viewing party is the first project I completed
+        Viewing party is the first project I completed
         at ADA. This project was written in python and 
         focused on nested data structures and cementing
-        knowledge on the fundementals of programming. </p>
+        knowledge on the fundementals of programming.
         <nav>
             <a href="https://github.com/Ada-C18/viewing-party"> Click here to access Viewing Party </a>
         </nav>
-    </header>
-</section>
-    <header>
+    </div>
+    <div class="container">
         <h3> Swap-Meet</h3>
-        <p>
             Swap Meet was a pair programming project that tested
             our ability to implement classes and work with objects
             in python. 
-        </p>
         <nav>
             <a href="https://github.com/Ada-C18/swap-meet"> Click here to access Swap-Meet</a>
         </nav>
-    </header>
-    <header>
-        <h4> Task-List-Api</h4>
-        <p> This project was focused on the creation and application of API's, using psql datbases and deploying
+</div>
+    <div class="container">
+            <h4> Task-List-Api</h4>
+            This project was focused on the creation and application of API's, using psql datbases and deploying
             the app. The project was written in python and used flask
-            to create databases and deployed with heroku </p>
-        <nav>
-            <a href="https://github.com/Alaere00/task-list-api"> Click here to access Task-List-Api </a>
-        </nav>
-    </header>
-    <footer>
-        <h5>&copy; 2022</h5>
+            to create databases and deployed with heroku 
+            <nav>
+                <a href="https://github.com/Alaere00/task-list-api"> Click here to access Task-List-Api </a>
+            </nav>
+        </div>
+    </div>
+</div>
+    <footer class="pfooter">
+        <h5>Copyright 2022 &copy; </h5>
     </footer>
 </body>
 </html>
