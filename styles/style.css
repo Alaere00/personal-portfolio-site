@@ -28,7 +28,7 @@ body {
 
 
 .intro {
-    font-size: 45px;
+    font-size: 40px;
     margin-left: 120px;
     position: fixed;
     text-align: left;
@@ -39,12 +39,13 @@ body {
 }
 
 .sub-intro {
-    font-size: 17px;
+    font-size: 19px;
+
     
 }
 
 .goal {
-    font-size: 17px;
+    font-size: 16px;
     opacity: 0.8;
 }
 
@@ -75,7 +76,7 @@ body {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 924px) {
 
     .body {
         grid-template-columns: unset;
@@ -148,7 +149,17 @@ body {
     margin-right: 70px;
 }
 
-#description {
+#d1 {
+    margin-left: -39px;
+    margin-right: 70px;
+}
+
+#d2 {
+    margin-left: -39px;
+    margin-right: 70px;
+}
+
+#d3 {
     margin-left: -39px;
     margin-right: 70px;
 }
