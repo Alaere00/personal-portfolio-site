@@ -144,15 +144,26 @@ body {
     margin-right: 70px;
 }
 
+.description {
+    margin-right: 70px;
+}
+
+#description {
+    margin-left: -39px;
+    margin-right: 70px;
+}
+
 .styled-list {
     list-style: none;
     display: flex;
     color: black;
-    margin-right: 70px;
+    margin-right: 60px;
     flex-wrap: wrap;
+    font-size: 13px;
 }
 
 .styled-list li {
+    list-style: none;
     background-color: rgb(26, 249, 238);
     padding: 4px;
     border-radius: 10px;
@@ -167,6 +178,8 @@ body {
     opacity: 1;
     text-decoration-color: rgb(26, 249, 238);
 }
+
+
 
 .resume {
     font-size: 16px;
@@ -203,10 +216,6 @@ body {
 
 }
 
-.summary {
-    flex-grow: 0;
-}
-
 .summary a {
     color: white;
     text-decoration: none;
@@ -217,4 +226,11 @@ body {
     text-decoration: none;
     text-decoration: underline;
     text-decoration-color: rgb(26, 249, 238);
+}
+
+
+
+.description {
+    word-wrap: break-word;
+    font-size: 13px;
 }
