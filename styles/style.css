@@ -75,7 +75,7 @@ body {
 }
 
 
-@media (max-width: 770px) {
+@media (max-width: 600px) {
 
     .body {
         grid-template-columns: unset;
