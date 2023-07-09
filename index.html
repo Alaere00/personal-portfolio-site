@@ -4,87 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/21f7ede5a8.js" crossorigin="anonymous"></script>
     <link href="https://fonts.cdnfonts.com/css/movistar-text" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title> Index Document </title>
 </head>
-<body class="background-container">
-      <nav>
-          <ul class="nav-list">
-            <li><a href=./portfolio.html> Projects </a></li>
-          </ul>
-        </nav>
-        <header class="intro"> 
-          Hi my name is <br>
-          <p class="sub-intro">Alaere Nekekpemi.</p>
-    </header>
-<main>
-    <header>
-        <h2 class="main">About Me</h2>
-          <blockquote class="indented-blockquote">
+<body class="body">
+  <div class="intro"> 
+    Alaere Nekekpemi 
+    <br>
+    <div class="sub-intro">Software Engineer</div>
+    <a href="https://www.linkedin.com/in/alaere" class="social-icon">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Alaere00" class="social-icon">
+      <i class="fa-brands fa-github"></i>
+    </a>
+      <br>
+      <h1 class="goal">
+      Adaptable and efficient full-stack software engineer with a focus <br> on building quality, accessible, and user-friendly products for the web.
+
+      </h1>
+    <nav>
+      <ul class="nav-list">
+        <li> <a href="#about">ABOUT</a></li>
+        <li><a href="#experience">EXPERIENCE</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+        <h2 class="main"></h2>
+          <blockquote class="indented-blockquote" id="about">
             I transitioned into software after taking a data analytics course using R in University. I spent some time self-studying Python and CS concepts, then sought additional training and enrolled in Ada Developers, a coding school for women and gender-expansive adults. This intensive experience allowed me to refine my programming abilities, broaden my technical knowledge, and adopt industry best practices in software engineering.<br><br>
 
             I enjoy creating apps that are inline with my hobbies, I love to read manga and webtoon and decided to create a mobile
             app that would translate the text in boxes in realtime as it can be challenging to get English translations. I look forward to 
             connecting with you and discussing how I can help bring your vision to life.
 
-            <!-- I interned at Anaconda, Inc., the leading data science platform. Working alongside exceptional engineers, I made contributitions to our Payments team and learned the best practices of Software Engineering. This experience refined my problem-solving abilities and strengthened my collaboration skills within a team environment.
-  
-            If you are looking for a dedicated and driven software engineer to contribute to your organization's mission, I would love to connect and discuss how I can help bring your vision to life.  -->
           </blockquote>
-          <h3 class="main">Experience</h3>
+          <h3 class="main" id="experience">EXPERIENCE</h3>
             <blockquote class="indented-blockquote">
               <strong class="title">Software Engineer Intern @ Anaconda, Inc.</strong><br>
               <strong class="date">Feburary 2023 - July 2023,<br></strong>
               </blockquote>
               <ul class="experience">
-              Worked on the Platform Payment Service team where I completed frontend and backend tickets, including syncing subscriptions and refactoring legacy code, bug fixes, and assisting in the development of the new Payments Service.
-              Led agile scrum meetings and conducted code reviews. I also played a significant role in creating UI elements, such as the payments system portal entry and upgrade button.
+              <li>Worked on the Platform Payment Service team where I completed frontend and backend tickets, including syncing subscriptions and refactoring legacy code, bug fixes, and assisting in the development of the new Payments Service.
+              Led agile scrum meetings and conducted code reviews.</li>
+              <li> I also played a significant role in creating UI elements, such as the payments system portal entry and upgrade button.</li>
+              </ul>
+              <ul class="styled-list">
+              <li>Python</li><li>FastAPI</li><li>Angular</li><li>Javascript</li><li>Typescript</li><li>Docker</li>
             </ul>
-              <h4 class="main">Projects</h4>
-              <body>
-                <div id="wrapper-main">
-                    <div>
-                        <div class="container">
-                            <img src="images/translateMe.png" alt="Image" height="200" width="300">
-                            <h2 class="summary">TranslateMe<br>built with Swift, Python, Google Cloud Platform, Flask</h2>
-                            <button class="github">
-                                <nav>
-                                    <a href="https://github.com/Alaere00/TranslateMe-backend">
-                                        <img src="github.svg" width="60" height="35"/>
-                                    </a>
-                                </nav>
-                            </button>
-                        </div>
-                        <div class="container">
-                            <img src="images/vision_board.png" alt="Image" height="200" width="300">
-                            <h3 class="summary">Inspiration Board<br>built with React.js, Python, Flask</h3>
-                            <button class="github">
-                            <nav>
-                                <a href="https://github.com/Alaere00/task-list-api">
-                                    <img src="github.svg" width="60" height="35"/>
-                                    </a>
-                            </nav>
-                            </button>
-                        </div>
-                        <div class="container">
-                            <img src="images/weather.png" alt="Image" height="200" width="300">
-                            <h4 class="summary">Weather Report <br> built with HTML, CSS, & Javascript</h4>
-                            <button>
-                            <nav>
-                                <a href="https://github.com/Alaere00/task-list-api">
-                                <img src="github.svg" width="60" height="35"/>
-                            </a>
-                            </nav>
-                        </button>
-                        </div>
-                    </div>
-                </div>
-              </body>
-    </header>
-  </main>
-    <footer id="footer">
-      Built and Designed by Alaere Nekekpemi
-    </footer>
+            <nav>
+            <a class="resume" href="/resume.pdf">View Full Resume &#8594;</a>
+          </nav>
+              <h4 class="main" id="projects">PROJECTS</h4>
+                  <div class="project-container">
+                        <div class="index-container">
+                            <img src="images/translateMe.png" alt="Image" height="120" width="180">
+                            </div>
+                            <div class="summary">
+                              <a href="https://github.com/Alaere00/TranslateMe-backend">Translate Me &#8599;</a>
+                                <ul class="styled-list">
+                                <li>Python</li><li>Flask</li><li>Google Cloud Vision API</li><li>Google Translate</li><li>Swift</li>
+                                <li>Firebase</li>
+                              </ul>
+                            </div>
+                        <div class="index-container">
+                            <img src="images/vision_board.png" alt="Image" height="120" width="180">
+                          </div>
+                          <div class="summary">
+                          <a href="https://github.com/Alaere00/task-list-api">
+                            Inspiration Board &#8599;
+                          </a>
+                            <ul class="styled-list">
+                            <li>Python</li><li>Flask</li><li>React.js</li><li>Javascript</li>
+                            <li>Postgres</li>
+                            <li>Heroku</li>
+                          </ul>
+                          </div>
+                        <div class="index-container">
+                            <img src="images/weather.png" alt="Image" height="120" width="180">
+                          </div>
+                          <div class="summary">
+                            <a href="https://github.com/Alaere00/task-list-api">
+                              Weather Report &#8599;
+                        </a>
+                        <ul class="styled-list">
+                          <li>Javascript</li><li>HTML</li><li>CSS</li><li>WeatherAPI</li>
+                        </ul>
+                      </div>
+              </div>
+
+            </div>
+            <footer id="footer">
+              Designed by Alaere Nekekpemi
+            </footer>
   </body>
+
 </html>
