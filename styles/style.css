@@ -1,8 +1,14 @@
 .body {
     display: grid;
-    grid-gap: 0;
-    grid-template-columns: 1fr 1fr;
+    grid-gap: 105px;
+    grid-template-columns: 1fr 2fr;
 }
+
+/* .body {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+} */
 
 .social-icon {
     color: #ffffff;
@@ -76,10 +82,11 @@ body {
 }
 
 
-@media (max-width: 924px) {
+@media (max-width: 1044px) {
 
     .body {
         grid-template-columns: unset;
+        grid-gap: unset;
     }
 
     .container {
@@ -243,5 +250,5 @@ body {
 
 .description {
     word-wrap: break-word;
-    font-size: 13px;
+    font-size: 15px;
 }
