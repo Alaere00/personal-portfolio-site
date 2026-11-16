@@ -1,0 +1,16 @@
+---
+import { Icon } from '@astrojs/starlight/components';
+const { title } = Astro.locals.starlightRoute.entry.data;
+const links = [
+  { href: 'https://www.linkedin.com/in/alaere', icon: 'linkedin', label: 'LinkedIn' },
+  { href: 'https://github.com/Alaere00', icon: 'github', label: 'GitHub' },
+];
+---
+
+<h1>{title}
+    <div class="row">
+        {links.map((link) => (
+            <a href={link.href} aria-label={link.label}><Icon size="1.75rem" color="white" name={link.icon}></Icon></a>
+        ))}
+    </div>
+</h1>

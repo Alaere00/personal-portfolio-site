@@ -1,0 +1,26 @@
+.body {
+    color: #fdf7ff;
+    background-color: #1e122b;
+    font-family: 'Inter', sans-serif;
+}
+
+.tags {
+    gap: 5px;
+    padding: 5px;
+    align-items: center;
+  }
+  
+  .tags-container {
+    border-radius: 999px;
+    font-size: 0.8rem;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  
+  .sl-badge {
+    border-radius: 999px;
+  }

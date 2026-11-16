@@ -1,20 +1,25 @@
 ---
-const pageTitle = "Home Page";
+import "../styles/global.css";
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import Projects from "../pages/projects.astro";
+const fullName = "Alaere Nekekpemi";
+const pitch = "Full-stack Engineer";
 ---
+
+<StarlightPage frontmatter={{ title: `${fullName} | Software Engineer`, template: "splash",  tableOfContents: false,}}>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
   </head>
-  <body>
-
-    <h1>{pageTitle}</h1>
+  <body class="body">
+    <Projects/>
 
     <script>
-      import "../scripts/menu.js";
+    //   import "../scripts/menu.js";
     </script>
   </body>
 </html>
+</StarlightPage>

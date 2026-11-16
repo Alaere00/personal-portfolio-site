@@ -1,0 +1,39 @@
+---
+import "../styles/global.css";
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import  { projects } from '../data/projects.astro';
+import { Badge } from '@astrojs/starlight/components';
+const pageTitle = "Projects";
+---
+
+<div>
+    <title>{pageTitle}</title>
+    {
+    projects.map((project) => (
+    <CardGrid> 
+        <Card title={project.title} >{project.description}
+        {project.tags?.map((tag) => (
+            <div class="row">
+            <Badge class="tags" text={tag} size="medium" style={{
+    backgroundColor: '#7a3e96',
+    borderColor: '#9d5cbd',
+    color: '#fdf7ff',
+  }}/>
+            </div>
+        ))}
+        </Card>
+    </CardGrid>
+    ))
+}
+</div>
+
+
+<!-- <style>
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      /* margin-top: 0.5rem; */
+      text-align: center;
+    }
+  </style> -->
