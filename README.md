@@ -1,15 +1,35 @@
-# Personal Portfolio Site
+# Alaere Nekekpemi | Portfolio
 
-## Introduction
+Personal portfolio site for Alaere Nekekpemi, a full-stack software engineer.
+It showcases selected projects and professional experience.
 
-It is common for developers to create a website to show off their web-dev skills and document their work and interests. These sites often feature things like:
 
-- A professional introduction of themselves, careers, and interests
-- A portfolio of projects that they've created and/or collaborated on
-- A blog to share their experiences, thoughts, and/or subject matter expertise
-- Other materials to share any non-coding interests and hobbies
-- A site designed to express themselves
+## Built with
 
-We will use HTML & CSS to create a static site whose content is our personal portfolio. Our personal portfolio site should contain information about ourselves and the coding work we've done.
+- [Astro](https://astro.build) and Starlight
+- Deployed on Render
+
+## Running it locally
+
+```bash
+cd astro
+npm install
+npm run dev
+```
+
+The site runs at `http://localhost:4321`.
+
+## Project structure
+
+- `astro/src/pages/`: the homepage
+- `astro/src/components/`: Projects, Experience, and layout components
+- `astro/src/data/`: project and experience content
+- `astro/public/`: images and static files
+
+## Contact
+
+- [LinkedIn](https://www.linkedin.com/in/alaere/)
+- [GitHub](https://github.com/Alaere00)
+
 
 
