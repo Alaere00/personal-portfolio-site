@@ -1,0 +1,19 @@
+---
+import { experiences } from "../data/workHistory.astro";
+---
+
+<div>
+    {experiences.map((experience) => (
+         <p class="dates">{experience.dates}</p>
+        <div class="experience-card">
+            <h3>{experience.role}, {experience.company}</h3>
+     
+            <ul>
+                {experience.bullets.map((responsibility) => (
+                    <li>{responsibility}</li>
+                ))}
+            </ul>
+        </div>
+    ))}
+
+</div>

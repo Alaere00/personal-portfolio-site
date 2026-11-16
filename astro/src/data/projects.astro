@@ -3,7 +3,7 @@
 interface Projects {
     title: string;
     description: string;
-    image: string;
+    image?: string;
     href: string;
     tags?: string[];
 }
@@ -12,21 +12,29 @@ export const projects: Projects[] = [
     {
         title: "MyLibrary",
         description: "A web application for managing, organizing, and rating your personal books and collection. Uses embeddings to provide personalized recommendations based on user interactions.",
-        image: "/images/projects/mybookshelf.png",
+        // image: "/images/projects/mybookshelf.png",
         href: "https://github.com/Alaere00/my-library",
         tags: ["Python", "FastAPI", "React", "Typescript", "PostgreSQL"],
     },
     {
         title: "TranslateMe",
         description: "Mobile application that allows users to translate text and speech in real-time using AI-powered translation models.",
-        image: "/images/projects/translateme.png",
+        image: '../src/images/translateMe.png',
         href: "https://github.com/Alaere00/TranslateMe-backend",
         tags: ["Python", "Flask", "Google Cloud Vision API", "Google Translate", "Swift", "Firebase"],
     },
     {
         title: "Taskq",
         description: "General-purpose background job system that allows you to run background jobs in a distributed manner. It supports multiple backends and provides a simple API for defining and executing tasks.",
-        image: "/images/projects/tasks.png",
+        // image: "/images/projects/tasks.png",
+        href: "https://github.com/Alaere00/taskq",
+        tags: ["Go", "SQL"],
+
+    },
+    {
+        title: "Vision Board",
+        description: "General-purpose background job system that allows you to run background jobs in a distributed manner. It supports multiple backends and provides a simple API for defining and executing tasks.",
+        image: "/src/images/vision_board.png",
         href: "https://github.com/Alaere00/taskq",
         tags: ["Go", "SQL"],
 

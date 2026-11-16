@@ -1,0 +1,40 @@
+---
+interface Experience {
+  role: string;
+  company: string;
+  dates: string;
+  bullets: string[];
+}
+
+export const experiences: Experience[] = [
+  {
+    role: "Software Engineer 2",
+    company: "Anaconda",
+    dates: "Oct 2024 – Aug 2026",
+    bullets: [
+      "Built the access control and model execution UI for a self-hosted AI model platform.",
+      "Shipped a dashboard for managing private package channels.",
+      "Cut time to resolution for recurring production errors by 19% using Sentry.",
+    ],
+  },
+  {
+    role: "Software Engineer 1",
+    company: "Anaconda",
+    dates: "Aug 2023 – Oct 2024",
+    bullets: [
+      "Led a chart-building tool for Python in Excel with React and TypeScript.",
+      "Built a config-driven code generator with sub-second UI updates.",
+      "Reduced state-handling bugs by over 50% with a centralized Redux store.",
+    ],
+  },
+  {
+    role: "Software Engineer Intern",
+    company: "Anaconda",
+    dates: "Feb 2023 – Aug 2023",
+    bullets: [
+      "Built FastAPI payment services and a Stripe-to-database sync pipeline.",
+      "Added Kafka event streaming for real-time updates across services.",
+    ],
+  },
+];
+---

@@ -5,35 +5,32 @@ import  { projects } from '../data/projects.astro';
 import { Badge } from '@astrojs/starlight/components';
 const pageTitle = "Projects";
 ---
-
 <div>
     <title>{pageTitle}</title>
     {
     projects.map((project) => (
     <CardGrid> 
-        <Card title={project.title} >{project.description}
+        <Card title={project.title}>
+        {project.image && (
+            <img
+            src={project.image}
+            alt={project.title}
+            height="120"
+            width="180"
+            />
+        )}
+        <p>{project.description}</p>
+        <div class="badge-row">
         {project.tags?.map((tag) => (
-            <div class="row">
-            <Badge class="tags" text={tag} size="medium" style={{
-    backgroundColor: '#7a3e96',
-    borderColor: '#9d5cbd',
-    color: '#fdf7ff',
-  }}/>
-            </div>
+            <Badge text={tag} size="medium" style={{
+            backgroundColor: '#7a3e96',
+            borderColor: '#9d5cbd',
+            color: '#fdf7ff',
+        }}/>
         ))}
+        </div>
         </Card>
     </CardGrid>
     ))
 }
 </div>
-
-
-<!-- <style>
-    .badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      /* margin-top: 0.5rem; */
-      text-align: center;
-    }
-  </style> -->

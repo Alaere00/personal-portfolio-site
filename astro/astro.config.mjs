@@ -5,9 +5,8 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
   integrations: [starlight({
-    title: 'My Astro Site',
-    components: { PageTitle: '/src/components/PageTitle.astro' },
-    // customCss: ['src/styles/global.css'],
+    title: "",
+    components: { PageTitle: '/src/components/PageTitle.astro', Search: "/src/components/Empty.astro", ThemeSelect: "/src/components/Empty.astro", SocialIcons: "/src/components/Empty.astro" },
   }
   )],
 

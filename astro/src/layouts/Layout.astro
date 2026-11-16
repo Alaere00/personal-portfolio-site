@@ -1,7 +1,9 @@
 ---
 import "../styles/global.css";
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 import Projects from "../pages/projects.astro";
+import Experiences from "../pages/experiences.astro";
 const fullName = "Alaere Nekekpemi";
 const pitch = "Full-stack Engineer";
 ---
@@ -15,11 +17,15 @@ const pitch = "Full-stack Engineer";
     <meta name="generator" content={Astro.generator} />
   </head>
   <body class="body">
-    <Projects/>
-
-    <script>
-    //   import "../scripts/menu.js";
-    </script>
+    <Tabs>
+      <TabItem label="Projects">
+        <Projects/>
+      </TabItem>
+      <TabItem label="Experiences">
+        <Experiences/>
+      </TabItem>
+    </Tabs>
   </body>
+  <footer>© Alaere Nekekpemi. Built with Astro.</footer>
 </html>
 </StarlightPage>
