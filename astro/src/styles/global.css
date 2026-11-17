@@ -3,12 +3,13 @@
   --bg: #1a1224;
   --surface: #241a33;
   --line: #3a2c52;
-  --text: #f3edff;
-  --muted: #b9a9d6;
+  --color: #fdf7ff;
+  --muted: #fdf7ff;
   --accent: #b58bff;
   --chip: #34244f;
 
-  --sl-content-width: 46rem;
+  --sl-content-width: 72rem;
+
   --sl-color-bg: var(--bg);
   --sl-color-bg-nav: var(--bg);
   --sl-color-hairline: var(--line);
@@ -44,7 +45,7 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 8px;
   }
 
 
@@ -55,3 +56,11 @@
     word-break: normal;
     border-radius: 999px;
   }
+
+
+  .site-footer {
+    position: absolute;
+    color: var(--sl-color-gray-3);
+    font-size: 0.9rem;
+  }
+

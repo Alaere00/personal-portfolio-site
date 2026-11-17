@@ -3,13 +3,12 @@ import "../styles/global.css";
 import { Card, CardGrid } from '@astrojs/starlight/components';
 import  { projects } from '../data/projects.astro';
 import { Badge } from '@astrojs/starlight/components';
-const pageTitle = "Projects";
 ---
 <div>
-    <title>{pageTitle}</title>
     {
     projects.map((project) => (
     <CardGrid> 
+        <div>
         <Card title={project.title}>
         {project.image && (
             <img
@@ -30,7 +29,62 @@ const pageTitle = "Projects";
         ))}
         </div>
         </Card>
+    </div>
     </CardGrid>
     ))
 }
 </div>
+
+
+<style>
+    /* One column so each card spans the full width of the right side */
+    .projects :global(.card-grid) {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Rounded corners, and taller cards */
+    .projects :global(.card) {
+      border-radius: 12px;
+      overflow: hidden;
+      min-height: 13rem;
+    }
+  
+    .project {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+    }
+  
+    img {
+      flex: 0 0 9rem;
+      width: 9rem;
+      height: 7rem;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  
+    .text {
+      flex: 1;
+      min-width: 0;
+    }
+  
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+    }
+  
+    .badge-row :global(.sl-badge) {
+      flex: 0 0 auto;
+      white-space: nowrap;
+      background-color: #7a3e96;
+      border-color: #9d5cbd;
+      color: #fdf7ff;
+    }
+  
+    @media (max-width: 40rem) {
+      .project { flex-direction: column; }
+      img { width: 100%; flex-basis: auto; }
+    }
+  </style>

@@ -5,17 +5,23 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import Projects from "../pages/projects.astro";
 import Experiences from "../pages/experiences.astro";
 const fullName = "Alaere Nekekpemi";
-const pitch = "Full-stack Engineer";
+const pitch = "I'm an engineer with over three years of professional experience. After taking a data analytics course in university, I became interested in programming, and since then I've built user-friendly applications, from Python services to React interfaces. I'm interested in full-stack and backend roles with a focus on infrastructure."
 ---
 
-<StarlightPage frontmatter={{ title: `${fullName} | Software Engineer`, template: "splash",  tableOfContents: false,}}>
-    <Tabs>
-      <TabItem label="Projects">
-        <Projects/>
-      </TabItem>
-      <TabItem label="Experiences">
-        <Experiences/>
-      </TabItem>
-    </Tabs>
-  <footer>© Alaere Nekekpemi. Built with Astro.</footer>
+<StarlightPage frontmatter={{ title: `${fullName}`, template: "splash",  tableOfContents: false,}}>
+    <div>
+    <section style="position: relative;" class="content">
+        <h2>About</h2>
+        <p>{pitch}</p>
+        <Tabs>
+            <TabItem label="Projects">
+              <Projects/>
+            </TabItem>
+            <TabItem label="Experiences">
+              <Experiences/>
+            </TabItem>
+          </Tabs>
+    </section>
+    </div>
+  <footer class="site-footer">© Alaere Nekekpemi. Built with Astro.</footer>
 </StarlightPage>

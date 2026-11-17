@@ -6,14 +6,14 @@ const links = [
   { href: 'https://github.com/Alaere00', icon: 'github', label: 'GitHub' },
   {href: '', icon: 'file', label: 'Resume'},
 ];
-const intro = "Full-stack engineer building accessible, user-friendly products for the web, from React interfaces to Python services."
 ---
-
+<div class="page-title">
 <h1>{title}
-    <p style="font-size: 1rem; font-weight: 400;">{intro}</p>
-    <div class="row">
+    <h2 style="font-size: 1.3rem; font-weight: 600;">Software Engineer</h2>
+    <div style="margin-top: 1rem;" class="row">
         {links.map((link) => (
             <a href={link.href} aria-label={link.label}><Icon size="1.75rem" color="white" name={link.icon}></Icon></a>
         ))}
     </div>
 </h1>
+</div>
